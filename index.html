@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Syrena - MultiPurpose Fashion Responsive Shopify Theme">
+		<meta name="keywords" content="Shopify, Shopify theme, responsive Shopify theme">
+		<meta name="author" content="apollotheme">
+		<title>Syrena - MultiPurpose Fashion Responsive Shopify Theme</title>
+		<link rel="stylesheet" type="text/css" href="./access/css/aos.css" media="all">
+		<link rel="stylesheet" type="text/css" href="./access/css/bootstrap.css" media="all">
+		<link rel="stylesheet" type="text/css" href="./access/css/style.css" media="all">	
+		<link rel="stylesheet" type="text/css" href="./access/css/font-awesome.min.css" media="all">
+		<link rel="stylesheet" type="text/css" href="./access/css/owl.carousel.css" media="all">
+		<link rel="stylesheet" type="text/css" href="./access/css/owl.theme.css" media="all">
+		<link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+		<!--[if lt IE 9]>
+		<script src="css/respond.min.js"></script>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>		
+		<![endif]-->
+	</head>
+	<body id="page-top">
+		<header class="header">
+			<div class="header-content">
+				<div class="row topnav-flex">
+					<div class="left-topnav col-lg-3 col-md-2 col-sm-12 col-xs-12 col-sp-12">
+						<div class="logo" data-aos="fade">
+							<a href="#" title="Syrena Shopify">
+								<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 165 30"><title>logo-svg</title><image width="165" height="30" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKUAAAAeCAYAAABNJt5sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1MUUyNUU4OUVBNDcxMUVCQUQ3RjlFMjYyRUM5NzE5NSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1MUUyNUU4QUVBNDcxMUVCQUQ3RjlFMjYyRUM5NzE5NSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjUxRTI1RTg3RUE0NzExRUJBRDdGOUUyNjJFQzk3MTk1IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjUxRTI1RTg4RUE0NzExRUJBRDdGOUUyNjJFQzk3MTk1Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+LTYqsAAABR1JREFUeNrsW91x4zYQJjVugC6Bes09SZNrQC5Bug6oEqQSxBKMDmKWIDaQzPkpeTVKOJbgYD0fMzweAO4SoE3F3BmOxqbws7vf/gJKX19fEwl9+/olMx+Fefbm2fRe13iqp7/+0ckN0+H33/bgMzG8PAjHnsxH3o63yEeZOZsJ907r7/C0pLFuOdH8RGfi748//34OmT+VgNIAkhT1xPx6ZZ6jS/hg7OIY+2DG1QzB9MdrM249MM7GMO1T4X0GHluBk4EdmMoqsKeM8fXzGIA49v82l3m3w95962vIV49Ym+Z/hMH5qDTAPBu8fLc5LvPOa+SriQCZwJPuXC+hEO0ZO0QnmzBGGmcGoZMAv/f23TCUlZnnCoVlzDUvZsxTJOeYwbNfGesToK4wPgkgC8yfc3Rj8HKxAJJFKyYgMwhcQhQqqiGLcvy/8AkNAuq/b+Cdxyo1Fwi9T1efAfoM16x7iQDKvVA/ttTCB8jNCP2fxjKzEjBtAwnlDmsDvtR83iOnaAEy6LUQMl2eqBjYzy8AD8jTck/Y0wMKG+0RWuUhLIZQLvDQkmj0n6reM59fCZh2eUMNgDUIyWvkaNycpZSAEla7c+SwIZ5GDCyA6eTJGdP2oTzOA/BTRJ0eO2veo7BypizMsO3SPzmlrckR0/ah9TkpTwxQZlxrIzAywvZPwHYwkUMgHLDGrva7gPJ5/IJbxKBwcyX4OxhbDECqzppNJ3qNJRePz2b+bb/SNn/T+tuhCBMDlNojzFeqhMeGIAiu5IAeeWbhAHYM0khHSoYHyRwhULvGw3CqCOHURnUXkJ01R7dnwKPLWJwdCQNMHVB0JndchocqSTDRhmNpfqcc7aE3D9IRbOEAQR0JlJJWycbTCnOlHL6iJjSvjCUDDo/PDDmN3g/LU8JFc0My5UcvEs8JACtG+CgitoFsIVcScnJfVKFqHhHkB9pMQ1W2niEofbnkhxc6BMyDgPG3BjTaLFwqPW2TzJFwh7SBplIqeXcC4Usy3EivOvnrIWTRkDA9N1pJvoxO/JFp1Vki6IXBSynPPHtH9R/juK6JqNShSv4nIMY49ovgZaWUTTn5nXQAqiv17euXHArwtQykeZJyAPnkEESsAmcMsCUgrpCHlcltUeOJBtlU5/eSY8asX2GZp8RZ8zmGRcFb1cx56g++9KEHwDyFR3xvevbodai3WkwOSkOPBpjXPjgBpjKiB+IqT32ktuAlag9grRcuHL3XWRKM3tnwx6UYmwMrkoADAVb4NoucOjndD/P3mbxkR9CPsYoHau+Y+eqB0C9t0E9FypHr5uhAlD3DfEtDEPpuxXMqT+fggos6VS9lC2pv3TEAubFs6oJbIG1vMrY3KwcYUzPxJGRAyhOqXN6Cbgjdyp1T5cnpExR1m5gLhp7o+Og4VuhohmtPSqBmpLRzMq5vd7kBQLZpynFWLSE0zrcCIBATB9uRV6Tcspry1vYYpdEZcCLvl+5xB/IWgEm8SfqoWvh9uac0wGzMQ9bSXk+rHfkjJff3kfI9PefQbVEcKeGBCU4yuO1M8mIJMNcM+dOt83UScOqTSn+j88sEaTqJEHCTe2dpAz3cghLhBXPL/v8XJy8W/hr0sINplqDE8eSLI09VyUKzoVD8hBQ67022qlUvgPwcNDtQvsOdyYUWUIqpuKUCZ6HPAUpb6FZzagMt9IlA6fjpLFG1qGoB5Zy8ZB3x5w4LLaAUeUlbX2/xkp+Q0in6TAstFEL/CjAAC9tneyxOGpsAAAAASUVORK5CYII="/></svg>
+							</a>
+						</div>
+					</div>
+					<div class="center-topnav col-lg-6 col-md-7 col-sm-12 col-xs-3 col-sp-3">
+						<nav class="navbar navbar-default megamenu">
+						    <!-- Brand and toggle get grouped for better mobile display -->
+						    <div class="navbar-header">
+						      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							        <span class="sr-only">Toggle navigation</span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+							        <span class="icon-bar"></span>
+						      </button>
+						    </div>
+					    	<!-- Collect the nav links, forms, and other content for toggling -->
+					    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-aos="fade">
+						      	<ul class="nav navbar-nav">
+							        <li><a class="page-scroll" href="#page-demo">Demo</a></li>
+							        <li><a class="page-scroll" href="#detail-collection">Product</a></li>
+							        <li><a target="_blank" class="page-scroll" href="https://www.youtube.com/watch?v=bk254fMFDXM&list=PLnA4OSFhnLasuixGvmNOc7XZ9MrxuH1xR">Video Guide</a></li>
+						      	</ul>
+					    	</div><!-- /.navbar-collapse -->
+						</nav>
+					</div>
+					<div class="right-topnav col-lg-3 col-md-3 col-sm-12 col-xs-9 col-sp-9">
+						<!-- <div class="btn-purchase" data-aos="fade">
+							<a href="https://1.envato.market/WDqvyJ" class="btn btn-outline" title="Purchase">Purchase Bedove Theme</a>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="slideshow">
+			<a href="#" title="Syrena Shopify Theme">
+				<img src="images/image-slideshow.jpg" alt="Syrena Shopify Theme" />
+				<div class="text-inside header-content">
+					<div class="larger" data-aos="fade">MultiPurpose Fashion eCommerce<br/>Shopify Theme
+						<div class="sub-text">
+							<div>01+<span>Home page</span></div>
+							<div>06+<span>Shop pages</span></div>
+							<div>08+<span>Product pages</span></div><br>
+							<div class="pl-0">05+<span>Headers</span></div>
+							<div>06+<span>Footers</span></div>
+							
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<section class="content-container">
+			<div id="page-demo">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 text-left">
+							<div class="border-x box-pass">
+								<img src="images/com.png" alt="Syrena Shopify Theme" width="50"/>
+								<h3 class="mb-1">Demo Store Password:</h3>
+								<br>
+								<p id="p1" class="passwordinput">1</p>
+								
+								<div><br>
+									<button onclick="copyToClipboard('#p1')" class="btn btn-outline btn-copy">Copy Password</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="border-x">
+								<img src="images/login.png" alt="Syrena Shopify Theme" />
+							</div>
+						</div>
+					</div>
+					<div class="heading-top" >
+						<br/>
+						<br/>
+						<br/>
+						<h2 class="title" data-aos="fade-up">4+ Stunning Cosmetics Homepages</h2>
+						<div class="desc-block" data-aos="fade-up" data-aos-duration="600">Premade-designed to fit exact requirements of any Cosmetics business attractively.</div>
+					</div>
+					<div class="row content">
+						<div class="col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" >
+							<a href="https://qx-syrena.myshopify.com//?preview_theme_id=125260398774" target="_blank">
+								<span class="image-bg">
+									<img src="images/demo-1.jpg" alt="home 1">
+								</span>	
+							</a>
+							<h3 class="text-heading"><a href="https://qx-syrena.myshopify.com//?preview_theme_id=125260398774" target="_blank"><span>Home 1</span></a></h3>
+						</div>
+						<div class="col-md-6 col-sm-12 col-xs-12" data-aos="fade-up" >
+							<a target="_blank">
+								<span class="image-bg">
+									<img src="images/demo-2.jpg" alt="home 2">
+								</span>	
+							</a>
+							<h3 class="text-heading"><a target="_blank"><span>Coming Soon</span></a></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="detail-page">
+				<div class="container">
+					<div class="heading-top">
+						<h2 class="title">08+ Product Layouts</h2>
+						<div class="desc-block">Syrena Theme offers you with many dedicated product pages that help to highlight all the potentials of your products.</div>
+					</div>
+					<div class="detail-box">
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="detail-item">
+										 <div class="img_detail"><a href="https://qx-syrena.myshopify.com/products/harriet-chambray?view=template1" target="_blank"><img src="images/detail-1.jpg" target="_blank"></a></div>
+										<h3 class="text-heading"><a href="https://qx-syrena.myshopify.com/products/harriet-chambray?view=template1" target="_blank"><span>Product detail thumb bottom</span></a></h3>
+	
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="detail-item">
+										<div class="img_detail"><a href="https://qx-syrena.myshopify.com/products/harriet-chambray?view=template2" target="_blank"><img src="images/detail-2.jpg" target="_blank"></a></div>
+										<h3 class="text-heading"><a href="https://qx-syrena.myshopify.com/products/harriet-chambray?view=template2" target="_blank"><span>Product Full Scroll Fixed</span></a></h3>
+
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="detail-item">
+										<div class="img_detail"><a href="https://qx-syrena.myshopify.com/products/harriet-chambray?view=template3" target="_blank"><img src="images/detail-3.jpg" target="_blank"></a></div>
+										<h3 class="text-heading"><a href="https://qx-syrena.myshopify.com/products/harriet-chambray?view=template3" target="_blank"><span>Product detail thumb left</span></a></h3>
+
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="detail-item">
+										<div class="img_detail"><a href="https://qx-syrena.myshopify.com/products/harriet-chambray?view=template4" target="_blank"><img src="images/detail-4.jpg" target="_blank"></a></div>
+										<h3 class="text-heading"><a href="https://qx-syrena.myshopify.com/products/harriet-chambray?view=template4" target="_blank"><span>Product detail Thumb Right</span></a></h3>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="detail-item">
+										<div class="img_detail"><a href="https://qx-syrena.myshopify.com/products/harriet-chambray?view=template5" target="_blank"><img src="images/detail-5.jpg" target="_blank"></a></div>
+										<h3 class="text-heading"><a href="https://qx-syrena.myshopify.com/products/harriet-chambray?view=template5" target="_blank"><span>Product detail Slide layout</span></a></h3>
+
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="detail-item">
+										<div class="img_detail"><a href="https://qx-syrena.myshopify.com/products/harriet-chambray?view=template6" target="_blank"><img src="images/detail-6.jpg" target="_blank"></a></div>
+										<h3 class="text-heading"><a href="https://qx-syrena.myshopify.com/products/harriet-chambray?view=template6" target="_blank"><span>Product detail Grid</span></a></h3>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="detail-item">
+										<div class="img_detail"><a href="https://qx-syrena.myshopify.com/products/harriet-chambray?view=template7" target="_blank"><img src="images/detail-7.jpg" target="_blank"></a></div>
+										<h3 class="text-heading"><a href="https://qx-syrena.myshopify.com/products/harriet-chambray?view=template7" target="_blank"><span>Product no thumb Full</span></a></h3>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="detail-item">
+										<div class="img_detail"><a href="https://qx-syrena.myshopify.com/products/harriet-chambray?view=template8" target="_blank"><img src="images/detail-8.jpg" target="_blank"></a></div>
+										<h3 class="text-heading"><a href="https://qx-syrena.myshopify.com/products/harriet-chambray?view=template8" target="_blank"><span>Product thumb left and Fixed Scroll</span></a></h3>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="detail-collection" style="background-color: #fff;">
+				<div class="container">
+					<div class="heading-top">
+						<h2 class="title">06+ Collection layouts</h2>
+						<div class="desc-block">Cosmetics items are shown effectively in different impressive styles so that<br/> 
+							customers can easily find their wanted to present your product detail.</div>
+					</div>
+					<div class="detail-box">
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="detail-item">
+										 <div class="img_detail"><a href="https://qx-syrena.myshopify.com/collections/all?view=template1" target="_blank"><img src="images/col1.jpg" target="_blank"></a></div>
+										<h3 class="text-heading"><a href="https://qx-syrena.myshopify.com/collections/all?view=template1" target="_blank"><span>1. Left Sidebar</span></a></h3>
+	
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="detail-item">
+										<div class="img_detail"><a href="https://qx-syrena.myshopify.com/collections/all?view=template2" target="_blank"><img src="images/col2.jpg" target="_blank"></a></div>
+										<h3 class="text-heading"><a href="https://qx-syrena.myshopify.com/collections/all?view=template2" target="_blank"><span>2. Right Sidebar</span></a></h3>
+
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="detail-item">
+										<div class="img_detail"><a href="https://qx-syrena.myshopify.com/collections/all?view=template3" target="_blank"><img src="images/col3.jpg" target="_blank"></a></div>
+										<h3 class="text-heading"><a href="https://qx-syrena.myshopify.com/collections/all?view=template3" target="_blank"><span>3. Full Width</span></a></h3>
+
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="detail-item">
+										<div class="img_detail"><a href="https://qx-syrena.myshopify.com/collections/all?view=template4" target="_blank"><img src="images/col4.jpg" target="_blank"></a></div>
+										<h3 class="text-heading"><a href="https://qx-syrena.myshopify.com/collections/all?view=template4" target="_blank"><span>4. Isotope</span></a></h3>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="detail-item">
+										<div class="img_detail"><a href="https://qx-syrena.myshopify.com/collections/all?view=template5" target="_blank"><img src="images/col5.jpg" target="_blank"></a></div>
+										<h3 class="text-heading"><a href="https://qx-syrena.myshopify.com/collections/all?view=template5" target="_blank"><span>5. Fullwidth mod</span></a></h3>
+
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="detail-item">
+										<div class="img_detail"><a href="https://qx-syrena.myshopify.com/collections/all?view=template6" target="_blank"><img src="images/col1.jpg" target="_blank"></a></div>
+										<h3 class="text-heading"><a href="https://qx-syrena.myshopify.com/collections/all?view=template6" target="_blank"><span>6. Infinity scroll</span></a></h3>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="detail-item">
+										<div class="img_detail"><a href="https://qx-syrena.myshopify.com/collections/sale-off" target="_blank"><img src="images/col7.jpg" target="_blank"></a></div>
+										<h3 class="text-heading"><a href="https://qx-syrena.myshopify.com/collections/sale-off" target="_blank"><span>Coupon code </span></a></h3>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="detail-lookbook" style="background-color: #7b4b35;">
+				<div class="container">
+					<div class="heading-top">
+						<h2 class="title">Attractive Lookbook</h2>
+						<div class="desc-block">Grab your customers attention & impress them with nice images.</div>
+					</div>
+					<div class="detail-box">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<div class="detail-item">
+									<div class="img_detail"><a href="https://qx-syrena.myshopify.com/pages/lookbook" target="_blank"><img src="images/look1.jpg" target="_blank"></a></div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<div class="detail-item">
+									<div class="img_detail"><a href="https://qx-syrena.myshopify.com/pages/lookbook" target="_blank"><img src="images/look2.jpg" target="_blank"></a></div>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="detail-search" style="background-color: #fff;padding:100px 0 0;">
+				<div class="container">
+					<div class="detail-box">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<div class="detail-item detail-s">
+									<div class="heading-top">
+										<h2 class="title">Awesome Live Search</h2>
+										<div class="desc-block">Search the products instantly with Syrena Live Search function!</div>
+									</div>
+									<div class="img_detail"><a href="https://qx-syrena.myshopify.com/" target="_blank"><img src="images/s1.jpg" target="_blank"></a></div>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<div class="detail-item detail-s">
+									<div class="heading-top">
+										<h2 class="title">Powerful Filter Systems</h2>
+										<div class="desc-block">Users can easily to find their wanted items in less time with the highest accuracy.</div>
+									</div>
+									<div class="img_detail"><a href="https://qx-syrena.myshopify.com/collections/all?view=template3" target="_blank"><img src="images/s2.jpg" target="_blank"></a></div>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="detail-menu" style="background-color: #fff;padding:30px 0;">
+				<div class="container">
+					<div class="detail-box">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="detail-item detail-menu">
+									<div class="heading-top">
+										<h2 class="title">Convenient Mega Menu</h2>
+										<div class="desc-block">It’s particularly clever that Syrena allows you to create stunning menus.</div>
+									</div>
+									<div class="img_detail"><a href="https://qx-syrena.myshopify.com/" target="_blank"><img src="images/s3.jpg" target="_blank"></a></div>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="detail-blog" style="background-color: #fff;padding: 70px 0 0;">
+				<div class="container">
+					<div class="heading-top">
+						<h2 class="title">Stunning Blogging Space</h2>
+						<div class="desc-block">Syrena gives you space where you can share any info, news, and Cosmetics trends to decoration.</div>
+					</div>
+					<div class="detail-box">
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="detail-item">
+										 <div class="img_detail"><a href="https://qx-syrena.myshopify.com/blogs/news?view=template1" target="_blank"><img src="images/b1.jpg" target="_blank"></a></div>
+										<h3 class="text-heading"><a href="https://qx-syrena.myshopify.com/blogs/news?view=template1" target="_blank"><span>1. Blog Left, Right, Full</span></a></h3>
+	
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="detail-item">
+										<div class="img_detail"><a href="https://qx-syrena.myshopify.com/blogs/news?view=template2" target="_blank"><img src="images/b2.jpg" target="_blank"></a></div>
+										<h3 class="text-heading"><a href="https://qx-syrena.myshopify.com/blogs/news?view=template2" target="_blank"><span>2. Infinity Scroll</span></a></h3>
+
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="detail-item">
+										<div class="img_detail"><a href="https://qx-syrena.myshopify.com/blogs/news?view=template3" target="_blank"><img src="images/b3.jpg" target="_blank"></a></div>
+										<h3 class="text-heading"><a href="https://qx-syrena.myshopify.com/blogs/news?view=template3" target="_blank"><span>3. Masonry</span></a></h3>
+
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="detail-item">
+										<div class="img_detail"><a href="https://qx-syrena.myshopify.com/blogs/news/leandra-medine-on-the-importance-of-maintaining-her-personal-style" target="_blank"><img src="images/b6.jpg" target="_blank"></a></div>
+										<h3 class="text-heading"><a href="https://qx-syrena.myshopify.com/blogs/news/leandra-medine-on-the-importance-of-maintaining-her-personal-style" target="_blank"><span> Article Full</span></a></h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="page-featured">
+				<div class="container">
+					<div class="heading-top">
+						<h2 class="title">More Outstanding Syrena Features</h2>
+						<div class="desc-block">
+							Check out other features that make Syrena become an awesome theme for any Cosmetics websites.
+						</div>
+					</div>
+					<div class="featured-box">
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="featured-item">
+										<div class="icon-name"><img src="images/ico1.png" alt="FULLY RESPONSIVE" /></div>
+										<div class="featured-info"><h5>High Page Scores</h5>
+										<p>No need to wait! Loading Page in short time with Syrena.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="featured-item">
+									<div class="icon-name"><img src="images/ico2.png" alt="FULLY RESPONSIVE" /></div>
+									<div class="featured-info">
+										<h5>Real-time Customization</h5>
+										<p>Get the real result right after the customization.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="featured-item">
+									<div class="icon-name"><img src="images/ico3.png" alt="Lastest Technology" /></div>
+									<div class="featured-info">
+										<h5>Dedicated Support</h5>
+										<p>Full documentation and fast support from our dedicated team are provided for the best user experience.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="featured-item">
+									<div class="icon-name"><img src="images/ico4.png" alt="Lastest Technology" /></div>
+									<div class="featured-info">
+										<h5>Seo Friendly</h5>
+										<p>No need to wait! Loading Page in short time with Syrena!</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="featured-item">
+										<div class="icon-name"><img src="images/ico5.png" alt="Powerful megamenu" /></div>
+										<div class="featured-info"><h5>Incredibly Admin Panel</h5>
+										<p>Get the real result right after the customization.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="featured-item">
+										<div class="icon-name"><img src="images/ico6.png" alt="FULLY RESPONSIVE" /></div>
+										<div class="featured-info"><h5>Unlimited Color</h5>
+										<p>Comes with tons of unique transition effects & options to customize your great sliders</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="footer-link">
+			<div class="container">
+				<h2 class="text-footer">Launch Your Womens Minimal Fashion<br> Site With Syrena Shopify Theme</h2>
+			</div>
+		</div>
+		<div id="back-top"><a href="#" title="Top">Top</a></div>
+		<script src="./access/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+		<script src="./access/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="./access/js/jquery.easing.min.js" type="text/javascript"></script>
+		<script src="./access/js/scrolling-nav.js" type="text/javascript"></script>
+		<script src="./access/js/owl.carousel.min.js" type="text/javascript"></script>
+		<script src="./access/js/aos.js" type="text/javascript"></script>
+	    <script>
+			function copyToClipboard(element) {
+				var $temp = $("<input>");
+				$("body").append($temp);
+				$temp.val($(element).text()).select();
+				document.execCommand("copy");
+				$temp.remove();
+			}
+		    $(document).ready(function($) {
+				
+				//Aos
+				AOS.init();
+		    	// hide #back-top first
+				$("#back-top").hide();
+
+				// fade in #back-top
+				$(function () {
+					$(window).scroll(function () {
+						if ($(this).scrollTop() > 100) {
+							$('#back-top').fadeIn();
+						} else {
+							$('#back-top').fadeOut();
+						}
+					});
+
+					// scroll body to 0px on click
+					$('#back-top a').click(function () {
+						$('body,html').animate({
+							scrollTop: 0
+						}, 800);
+						return false;
+					});
+				});
+		      	$('#owl-reviews').owlCarousel({
+		            // Most important owl features
+				    items : 3,
+				    itemsCustom : false,
+				    itemsDesktop : [1199,3],
+				    itemsDesktopSmall : [980,2],
+				    itemsTablet: [768,2],
+				    itemsTabletSmall: false,
+				    itemsMobile : [479,1],
+				    singleItem : false,
+				    itemsScaleUp : false,
+
+				    //Basic Speeds
+				    slideSpeed : 200,
+				    paginationSpeed : 800,
+				    rewindSpeed : 1000,
+
+				    //Autoplay
+				    autoPlay : false,
+				    stopOnHover : false,
+
+				    // Navigation
+				    navigation : false,
+				    navigationText : ["prev","next"],
+				    rewindNav : true,
+				    scrollPerPage : false,
+
+				    //Pagination
+				    pagination : true,
+				    paginationNumbers: false,
+
+				    // Responsive 
+				    responsive: true,
+				    responsiveRefreshRate : 200,
+				    responsiveBaseWidth: window,
+
+				    // CSS Styles
+				    baseClass : "owl-carousel",
+				    theme : "owl-theme",
+
+				    //Lazy load
+				    lazyLoad : false,
+				    lazyFollow : true,
+				    lazyEffect : "fade",
+
+				    //Auto height
+				    autoHeight : false,
+
+				    //JSON 
+				    jsonPath : false, 
+				    jsonSuccess : false,
+
+				    //Mouse Events
+				    dragBeforeAnimFinish : true,
+				    mouseDrag : true,
+				    touchDrag : true,
+
+				    //Transitions
+				    transitionStyle : false,
+
+				    // Other
+				    addClassActive : false,
+
+				    //Callbacks
+				    beforeUpdate : false,
+				    afterUpdate : false,
+				    beforeInit: false, 
+				    afterInit: false, 
+				    beforeMove: false, 
+				    afterMove: false,
+				    afterAction: false,
+				    startDragging : false,
+				    afterLazyLoad : false
+        		});
+		    });
+		</script>
+	</body>
+</html>
