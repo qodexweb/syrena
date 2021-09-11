@@ -61,8 +61,8 @@ a:hover,a:focus{
     transition: all 0.3s ease 0s;
 }
 .btn-outline {
-	background: #193a43;
-    border-color:#193a43;
+	background: #56362c;
+    border-color:#56362c;
     text-transform: uppercase;
     font-size: 14px;
 	border-radius: 0;
